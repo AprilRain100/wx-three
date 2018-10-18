@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/index/main",
+    "pages/login/main",
+    "pages/me/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#B48A4A",
+    "color": "#7E7E7E",
+    "list": [{
+      "pagePath": "pages/index/main",
+      "iconPath": "./static/img/hallnormol.png",
+      "selectedIconPath": "./static/img/hallseelected.png",
+      "text": "首页"
+      },
+      {
+        "pagePath": "pages/me/main",
+        "iconPath": "./static/img/mynormol.png",
+        "selectedIconPath": "./static/img/myselected.png",
+        "text": "我的"
+      }]
+  }
+}
