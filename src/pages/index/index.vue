@@ -31,7 +31,6 @@
 </template>
 
 <script>
-import tuo from '../../../static/img/tuo.png'
 import tuw from '../../../static/img/tuw.png'
 import like from '../../../static/img/like.png'
 import likeselected from '../../../static/img/likeselected.png'
@@ -45,7 +44,7 @@ export default {
     return {
       motto: 'Hello World',
       userInfo: {},
-      tuo,
+      tuo: 'https://demofile.xspace.gd.cn/wx3Dshow/ui/tuo.png',
       tuw,
       like,
       likeselected,
