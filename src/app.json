@@ -2,8 +2,11 @@
   "pages": [
     "pages/index/main",
     "pages/showDetails/main",
-    "pages/login/main",
-    "pages/me/main"
+    "pages/me/main",
+    "pages/details/main",
+    "pages/hall/main",
+    "pages/data/main",
+    "pages/login/main"
   ],
   "window": {
     "backgroundTextStyle": "light",

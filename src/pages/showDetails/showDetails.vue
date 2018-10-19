@@ -69,7 +69,7 @@
   </div>
 </template>
 <script>
-  import tuo from '../../../static/img/tuo.png'
+  // import tuo from '../../../static/img/tuo.png'
   import forwardt from '../../../static/img/forwardt.png'
   import iPhone from '../../../static/img/iPhone.png'
   import play from '../../../static/img/play.png'
@@ -77,7 +77,7 @@
   export default {
     data () {
       return {
-        tuo,
+        tuo: 'https://demofile.xspace.gd.cn/wx3Dshow/ui/tuo.png',
         forwardt,
         iPhone,
         play,
