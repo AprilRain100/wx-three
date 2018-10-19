@@ -137,9 +137,12 @@
         })
       },
       showBigPic (item) {
-        wx.previewImage({
-          urls: [item]
+        wx.navigateTo({
+          url: '../details/main'
         })
+        // wx.previewImage({
+        //   urls: [item]
+        // })
       }
     },
     onShareAppMessage () {
