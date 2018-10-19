@@ -23,7 +23,7 @@
 </template>
 
 <script>
-  import { mapActions } from 'vuex'
+  // import { mapActions } from 'vuex'
   import more from '../../../static/img/more.png'
   export default {
     components: {},

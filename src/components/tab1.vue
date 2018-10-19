@@ -35,21 +35,20 @@
 </template>
 
 <script>
-
   import look from '../../static/img/browset.png'
   import thumbs from '../../static/img/liket.png'
   import repeat from '../../static/img/forwards.png'
   import tel from '../../static/img/iPhonet.png'
   export default {
     name: 'tab1',
-    data (){
+    data () {
       return {
         look,
         thumbs,
         repeat,
         tel
       }
-    },
+    }
   }
 </script>
 

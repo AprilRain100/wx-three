@@ -37,8 +37,6 @@
       }
     },
     methods: {
-
-
     }
   }
 </script>

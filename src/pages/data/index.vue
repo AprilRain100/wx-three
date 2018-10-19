@@ -13,63 +13,61 @@
 </template>
 
 <script>
-  import { mapActions } from 'vuex'
+  // import { mapActions } from 'vuex'
   import tab1 from '../../components/tab1'
   import tab2 from '../../components/tab2'
   import tab3 from '../../components/tab3'
   import tab4 from '../../components/tab4'
-
-
   export default {
     name: 'tabSlider',
-    data (){
+    data () {
       return {
         actived: 0,
-        tab0Control:true,
-        tab1Control:false,
-        tab2Control:false,
-        tab3Control:false,
+        tab0Control: true,
+        tab1Control: false,
+        tab2Control: false,
+        tab3Control: false,
         items: [{
-          'tab': '今天',
-        },{
-          'tab': '昨天',
-        },{
-          'tab': '一周',
-        },{
-          'tab': '汇总',
+          'tab': '今天'
+        }, {
+          'tab': '昨天'
+        }, {
+          'tab': '一周'
+        }, {
+          'tab': '汇总'
         }]
       }
     },
-    components:{
+    components: {
       tab1,
       tab2,
       tab3,
       tab4
     },
     methods: {
-      //v-if控制tab页面的显示与隐藏
-      toggle(index){
-        this.actived = index;
-        if(this.actived === 0){
-            this.tab0Control = true;
-            this.tab1Control = false;
-            this.tab2Control = false;
-            this.tab3Control = false;
-        }else if(this.actived === 1){
-            this.tab0Control = false;
-            this.tab1Control = true;
-            this.tab2Control = false;
-            this.tab3Control = false;
-        }else if(this.actived === 2){
-          this.tab0Control = false;
-          this.tab1Control = false;
-          this.tab2Control = true;
-          this.tab3Control = false;
-        }else if(this.actived === 3){
-          this.tab0Control = false;
-          this.tab1Control = false;
-          this.tab2Control = false;
-          this.tab3Control = true;
+      // v-if控制tab页面的显示与隐藏
+      toggle (index) {
+        this.actived = index
+        if (this.actived === 0) {
+          this.tab0Control = true
+          this.tab1Control = false
+          this.tab2Control = false
+          this.tab3Control = false
+        } else if (this.actived === 1) {
+          this.tab0Control = false
+          this.tab1Control = true
+          this.tab2Control = false
+          this.tab3Control = false
+        } else if (this.actived === 2) {
+          this.tab0Control = false
+          this.tab1Control = false
+          this.tab2Control = true
+          this.tab3Control = false
+        } else if (this.actived === 3) {
+          this.tab0Control = false
+          this.tab1Control = false
+          this.tab2Control = false
+          this.tab3Control = true
         }
       }
 

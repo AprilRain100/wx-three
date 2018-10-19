@@ -30,17 +30,17 @@
 export default {
   data () {
     return {
-      myCover:true,
-      userInfo:false
+      myCover: true,
+      userInfo: false
     }
   },
   computed: {
 
   },
-  methods:{
-    noCreate(){
-     this.myCover = false;
-      this.userInfo = true;
+  methods: {
+    noCreate () {
+      this.myCover = false
+      this.userInfo = true
     }
   }
 
