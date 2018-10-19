@@ -1,6 +1,6 @@
 # wx-three
 
-> A Mpvue project
+> A Mpvue project？？
 
 ## Build Setup
 
