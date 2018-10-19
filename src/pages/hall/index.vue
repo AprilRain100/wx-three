@@ -44,6 +44,7 @@
     width: 100%;
     height: 100vh;
     background: #f6f4f3;
+    overflow-y:scroll;
   }
 .hallList{
   width: 94%;
