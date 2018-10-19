@@ -31,7 +31,7 @@
       }
     },
     onLaunch (options) {
-      console.log('onLaunch', options)
+      // console.log('onLaunch', options)
       wx.getSetting({
         success: res => {
           if (res && res.authSetting['scope.userInfo']) {

@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/main",
+    "pages/showDetails/main",
     "pages/login/main",
     "pages/me/main"
   ],
