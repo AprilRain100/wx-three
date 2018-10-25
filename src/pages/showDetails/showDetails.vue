@@ -2,8 +2,8 @@
   <div class="container" :class="{'hiddenScroll': isShowVideo}" id="box">
     <div class="card-top">
       <h1>正在展览</h1>
-      <div class="big-card">
-        <img class="big-img" :src="tuo" alt="">
+      <div class="big-card" @click="goWebView">
+        <img class="big-img" :src="tuo" alt="" >
         <div class="title">
           <span>艺术与灵感融合的全屋定制</span>
         </div>
@@ -94,7 +94,8 @@
         currentDefault: 0,
         isPlay: false,
         isShowVideo: false,
-        phone: 18218172009
+        phone: 18218172009,
+        webViewUrl: ''
       }
     },
     computed: {
@@ -143,6 +144,11 @@
         // wx.previewImage({
         //   urls: [item]
         // })
+      },
+      goWebView () {
+        wx.navigateTo({
+          url: `../www/main?url=https://uplus.xspace.gd.cn/`
+        })
       }
     },
     onShareAppMessage () {

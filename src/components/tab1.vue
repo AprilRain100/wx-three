@@ -5,28 +5,28 @@
         <div class="lookTitle">被浏览次数</div>
         <div class="lookOther">
           <img class="lookImg" :src="look" alt="">
-          <span>1</span>
+          <span>{{datas.looks}}</span>
         </div>
       </div>
       <div class="todayThumbs">
         <div class="thumbsTitle">被点赞次数</div>
         <div class="thumbsOther">
           <img class="thumbsImg" :src="thumbs" alt="">
-          <span>1</span>
+          <span>{{datas.likes}}</span>
         </div>
       </div>
       <div class="todayRepeat">
         <div class="repeatTitle">被转发次数</div>
         <div class="repeatOther">
           <img class="repeatImg" :src="repeat" alt="">
-          <span>1</span>
+          <span>{{datas.transpond}}</span>
         </div>
       </div>
       <div class="todayTel">
         <div class="telTitle">电话咨询次数</div>
         <div class="telOther">
           <img class="telImg" :src="tel" alt="">
-          <span>1</span>
+          <span>{{datas.tell}}</span>
         </div>
       </div>
 
@@ -47,6 +47,17 @@
         thumbs,
         repeat,
         tel
+      }
+    },
+    props: {
+      datas: {
+        type: Object,
+        default: {
+          looks: 2,
+          likes: 2,
+          transpond: 2,
+          tell: 2
+        }
       }
     }
   }

@@ -1,12 +1,14 @@
 {
   "pages": [
     "pages/index/main",
+    "pages/login/main",
     "pages/showDetails/main",
     "pages/me/main",
     "pages/details/main",
     "pages/hall/main",
     "pages/data/main",
-    "pages/login/main"
+    "pages/www/main",
+    "pages/createShowroom/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -24,7 +26,7 @@
       "text": "首页"
       },
       {
-        "pagePath": "pages/me/main",
+        "pagePath": "pages/createShowroom/main",
         "iconPath": "./static/img/mynormol.png",
         "selectedIconPath": "./static/img/myselected.png",
         "text": "我的"

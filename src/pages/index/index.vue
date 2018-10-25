@@ -4,7 +4,7 @@
     <div class="list">
         <div class="card" v-for="(item, index) in 5" :key="index">
           <img class="bigimg" :src="tuo" alt=""  @click="goDetail(item)">
-          <h5>艺术与灵感融合的全屋定制</h5>
+          <h5 @click="goWeb">艺术与灵感融合的全屋定制</h5>
           <div class="tools">
             <div>
               <img :src="likeFalg ? likeselected : like" alt="" @click="tapLike('like')">
@@ -74,6 +74,11 @@ export default {
     goDetail (item) {
       wx.navigateTo({
         url: '../showDetails/main'
+      })
+    },
+    goWeb () {
+      wx.navigateTo({
+        url: '../www/main?url=https://amazon.h5in.net/final_test/'
       })
     },
     tapLike (type) {

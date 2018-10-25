@@ -21,8 +21,9 @@
                   province: res.userInfo.province,
                   headimgurl: res.userInfo.avatarUrl
                 }
+                console.log(params)
                 // this.$store.commit('USERINFO', res.userInfo)
-                await this.loginMini(params)
+                // await this.loginMini(params)
                 // wx.switchTab({url: '../index/main'})
               }
             })
